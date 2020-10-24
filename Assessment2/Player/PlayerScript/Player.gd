@@ -22,34 +22,30 @@ func _physics_process(delta):
 		if attac == false || is_on_floor() == false:	
 			motion.x = min(motion.x + acceleration, maxspeed)
 			if attac == false:
-				$Sprite.flip_h = false #flip sprite to face direction
-				$Sprite.play("Run")
+				$AnimatedSprite.flip_h = false
+				$AnimatedSprite.play("Walk")
 				if sign($Position2D.position.x) == -1:
 					$Position2D.position.x *= -1
-		if is_on_floor() && Input.is_action_just_pressed("ui_right"):
-			$AudioStreamPlayer.play()
-		if is_on_floor() == false && Input.is_action_just_pressed("ui_right"):
-			$AudioStreamPlayer.stop() 
+
+
 		
 	elif Input.is_action_pressed("ui_left"):
 		if attac == false || is_on_floor() == false:	
 			motion.x = max(motion.x - acceleration, -maxspeed)
 			if attac == false:
-				$Sprite.flip_h = true #flip sprite to face direction
-				$Sprite.play("Run")
+				$AnimatedSprite.flip_h = true
+				$AnimatedSprite.play("Walk")
 				if sign($Position2D.position.x) == 1:
 					$Position2D.position.x *= -1
-		if is_on_floor() && Input.is_action_just_pressed("ui_left"):
-			$AudioStreamPlayer.play()
-		if is_on_floor() == false && Input.is_action_just_pressed("ui_left"):
-			$AudioStreamPlayer.stop() 
+
+
 		
 	else:
 		if attac == false:
-			$Sprite.play("Idle")
+			$AnimatedSprite.play("Idle")
 			friction = false
 			motion.x = lerp(motion.x, 0, 1)
-		$AudioStreamPlayer.stop()
+
 		
 	if is_on_floor():
 		if on_ground == false:
@@ -58,7 +54,6 @@ func _physics_process(delta):
 		if attac == false:
 			on_ground = false
 			if Input.is_action_just_pressed("ui_up") || is_on_floor() == false:
-				$AudioStreamPlayer3.play()
 				motion.y = jump
 			if friction == true:
 				motion.x = lerp(motion.x, 0, 0.1)
@@ -67,9 +62,9 @@ func _physics_process(delta):
 	else:
 		if attac == false:
 			if motion.y < 0:
-				$Sprite.play("Jump")
+				$AnimatedSprite.play("Jump")
 			else:
-				$Sprite.play("Fall")
+				$AnimatedSprite.play("Fall")
 	
 	motion = move_and_slide(motion, up)
 	
@@ -77,27 +72,30 @@ func _physics_process(delta):
 		if is_on_floor():
 			motion.x = 0
 		attac = true
-		$Sprite.play("Fire")
+		$AnimatedSprite.play("Shoot")
 		var fireball = FIREBALL.instance()
 		if sign($Position2D.position.x) == 1:
 			fireball.set_fireball_direction(1)
 		else:
-			fireball.set_fireball_direction(-1)
+			fireball.set_fireball_direction(1)
 		get_parent().add_child(fireball)
 		fireball.position = $Position2D.global_position
 		
-		if Input.is_action_just_pressed("ui_focus_next"):
-			$AudioStreamPlayer2.play()
-			
+	if Input.is_action_pressed("ui_down") && attac == false:
+		if is_on_floor():
+			motion.x
+		attac = true
+		$AnimatedSprite.play("Duck")
+		if Input.is_action_pressed("ui_focus_next") && Input.is_action_pressed("ui_down"):
+			$AnimatedSprite.play("Duckshoot")
+		#if sign
 	
-
 
 func _on_fallzone_body_entered(body):
-	get_tree().change_scene("res://Levels/Level1.tscn")
+	#get_tree().change_scene("res://Levels/Level1.tscn") change scene
 	pass # Replace with function body.
 	
-	
 
-func _on_Sprite_animation_finished():
+func _on_AnimatedSprite_animation_finished():
 	attac = false
 	pass # Replace with function body.

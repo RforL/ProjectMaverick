@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cactus.png-0637fe52d5649c2a1e645639bc180d3d.stex"
+path="res://.import/cactus.png-7d352caf165b8bd75d5f217e3d9a4391.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Level1Sprites/cactus.png"
-dest_files=[ "res://.import/cactus.png-0637fe52d5649c2a1e645639bc180d3d.stex" ]
+source_file="res://Assets/Western/cactus.png"
+dest_files=[ "res://.import/cactus.png-7d352caf165b8bd75d5f217e3d9a4391.stex" ]
 
 [params]
 

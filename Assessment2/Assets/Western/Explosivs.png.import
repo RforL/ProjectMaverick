@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Explosivs.png-2db6aff930ce57ee0c6f813a026c81df.stex"
+path="res://.import/Explosivs.png-8ab38681a8d06280b8c7d2c2b06a37a8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Level1Sprites/Explosivs.png"
-dest_files=[ "res://.import/Explosivs.png-2db6aff930ce57ee0c6f813a026c81df.stex" ]
+source_file="res://Assets/Western/Explosivs.png"
+dest_files=[ "res://.import/Explosivs.png-8ab38681a8d06280b8c7d2c2b06a37a8.stex" ]
 
 [params]
 

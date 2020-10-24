@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Scare crow.png-1d5cb710a5220bb56a80549c8f0a4873.stex"
+path="res://.import/Scare crow.png-116e1f279547cbf8eaeedc1645c10e38.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Level1Sprites/Scare crow.png"
-dest_files=[ "res://.import/Scare crow.png-1d5cb710a5220bb56a80549c8f0a4873.stex" ]
+source_file="res://Assets/Western/Scare crow.png"
+dest_files=[ "res://.import/Scare crow.png-116e1f279547cbf8eaeedc1645c10e38.stex" ]
 
 [params]
 

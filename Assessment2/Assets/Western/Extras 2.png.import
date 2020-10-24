@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Extras 2.png-ba08a515a095bd76563330fb15a82f43.stex"
+path="res://.import/Extras 2.png-6efadf38cca4b01549470b5bb56011bc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Level1Sprites/Extras 2.png"
-dest_files=[ "res://.import/Extras 2.png-ba08a515a095bd76563330fb15a82f43.stex" ]
+source_file="res://Assets/Western/Extras 2.png"
+dest_files=[ "res://.import/Extras 2.png-6efadf38cca4b01549470b5bb56011bc.stex" ]
 
 [params]
 

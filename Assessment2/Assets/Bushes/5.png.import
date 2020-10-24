@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/5.png-81a08a15e79f1f811e26ae88051d72bb.stex"
+path="res://.import/5.png-ba83263e424b1e7c764df042fdb2cf0a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Level2Sprites/Bushes/5.png"
-dest_files=[ "res://.import/5.png-81a08a15e79f1f811e26ae88051d72bb.stex" ]
+source_file="res://Assets/Bushes/5.png"
+dest_files=[ "res://.import/5.png-ba83263e424b1e7c764df042fdb2cf0a.stex" ]
 
 [params]
 

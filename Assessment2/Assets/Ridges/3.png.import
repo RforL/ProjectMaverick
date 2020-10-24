@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/3.png-3f003b8486bd6036e1db662b4f916ef1.stex"
+path="res://.import/3.png-c907ee44f33bac5923e20273bda61b7d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Level2Sprites/Ridges/3.png"
-dest_files=[ "res://.import/3.png-3f003b8486bd6036e1db662b4f916ef1.stex" ]
+source_file="res://Assets/Ridges/3.png"
+dest_files=[ "res://.import/3.png-c907ee44f33bac5923e20273bda61b7d.stex" ]
 
 [params]
 

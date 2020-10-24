@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/barrels 1.png-026eb5b543137efb76b2bbfeea13a8fd.stex"
+path="res://.import/barrels 1.png-1ce2e51ad61de8a393340648f0c7cc50.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Level1Sprites/barrels 1.png"
-dest_files=[ "res://.import/barrels 1.png-026eb5b543137efb76b2bbfeea13a8fd.stex" ]
+source_file="res://Assets/Western/barrels 1.png"
+dest_files=[ "res://.import/barrels 1.png-1ce2e51ad61de8a393340648f0c7cc50.stex" ]
 
 [params]
 

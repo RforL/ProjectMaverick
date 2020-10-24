@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/3.png-aa2a98849f1dd909d4c7936e7edbee49.stex"
+path="res://.import/3.png-44dd27a3f45df4c437a6f010e5eaa124.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Level2Sprites/Willows/3.png"
-dest_files=[ "res://.import/3.png-aa2a98849f1dd909d4c7936e7edbee49.stex" ]
+source_file="res://Assets/Willows/3.png"
+dest_files=[ "res://.import/3.png-44dd27a3f45df4c437a6f010e5eaa124.stex" ]
 
 [params]
 
