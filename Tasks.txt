@@ -11,12 +11,11 @@ Player
 - Crouch bug || Wenjie
 - Bullet Bug || Wenjie 
 
-
 UI - Ray
 - Health Bar
 - Gun Revolver
 - Menu
-- Moonshine 
+- Moonshine
 
 Background n assets - Arielle 
 levels
@@ -25,4 +24,5 @@ Storylines
 Map transitions || Lee
 Farm background
 
+SUNDAY FATHERS DAY
 
