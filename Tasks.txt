@@ -1,0 +1,28 @@
+Enemy
+- Die || Rewa
+- Shoot || Rewa 
+  - Collision box || Olivia to shoot mavy boi
+
+Player
+- Life || Olivia
+- Bullet count = 6 give him second reset after 0 || DONE!
+- Reworking bullet || Rewa
+- Improve camera box || Camera box || Rewa
+- Crouch bug || Wenjie
+- Bullet Bug || Wenjie 
+
+
+UI - Ray
+- Health Bar
+- Gun Revolver
+- Menu
+- Moonshine 
+
+Background n assets - Arielle 
+levels
+Storylines 
+
+Map transitions || Lee
+Farm background
+
+
