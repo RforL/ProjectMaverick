@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Tilesets/CityTiles/tileset4.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 16, 16 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="tileset4" type="Sprite" parent="."]
+position = Vector2( 16, 16 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 800, 260, 32, 32 )
+
+[node name="Area2D" type="Area2D" parent="tileset4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tileset4/Area2D"]
+shape = SubResource( 1 )
