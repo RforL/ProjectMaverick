@@ -1,5 +1,5 @@
 Enemy
-- Die || Rewa
+- Die || Rewa || DONE
 - Shoot || Rewa 
   - Collision box || Olivia to shoot mavy boi
 
