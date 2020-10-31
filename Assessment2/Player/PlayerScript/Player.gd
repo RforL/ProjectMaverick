@@ -8,7 +8,7 @@ const jump = -450
 const FIREBALL = preload("res://Player/Bullet/Bullet.tscn")
 
 var motion = Vector2() #motion.x, motion.y 
-
+var health = 5
 var on_ground = false
 var bullets = 0
 var shootable = true
@@ -104,7 +104,9 @@ func checkammo():
 		shootable = true
 		pass
 		
-
 func _on_AnimatedSprite_animation_finished():
 	attac = false
 	pass # Replace with function body.
+	
+func damage():
+	health -= 1
