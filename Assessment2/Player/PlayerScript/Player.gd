@@ -1,10 +1,10 @@
 extends KinematicBody2D
 
 const up = Vector2(0, -1)
-const maxspeed = 150
+const maxspeed = 200
 const gravity = 20
-const acceleration = 50
-const jump = -450
+const acceleration = 120
+const jump = -700
 const FIREBALL = preload("res://Player/Bullet/Bullet.tscn")
 
 var motion = Vector2() #motion.x, motion.y 
