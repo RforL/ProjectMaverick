@@ -33,9 +33,19 @@ animations = [ {
 "name": "Duckshoot",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 5 ), ExtResource( 9 ), ExtResource( 4 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "Walk",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 17 ), ExtResource( 17 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 18 ), ExtResource( 18 ), ExtResource( 17 ), ExtResource( 17 ) ],
 "loop": false,
 "name": "Shoot",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 16 ) ],
+"loop": true,
+"name": "Duck",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 20 ) ],
@@ -46,16 +56,6 @@ animations = [ {
 "frames": [ ExtResource( 19 ) ],
 "loop": true,
 "name": "Jump",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 16 ) ],
-"loop": true,
-"name": "Duck",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 5 ), ExtResource( 9 ), ExtResource( 4 ), ExtResource( 6 ) ],
-"loop": true,
-"name": "Walk",
 "speed": 5.0
 } ]
 
@@ -71,8 +71,7 @@ position = Vector2( 9.53674e-07, 0 )
 scale = Vector2( 0.337702, 0.345178 )
 frames = SubResource( 1 )
 animation = "Idle"
-frame = 6
-playing = true
+frame = 1
 
 [node name="Position2D" type="Position2D" parent="."]
 position = Vector2( 64, 0 )
