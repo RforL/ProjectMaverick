@@ -1,13 +1,13 @@
 Enemy
 - Die || Rewa || DONE
-- Shoot || Rewa 
+- Shoot || Rewa
   - Collision box || Olivia to shoot mavy boi
 
 Player
 - Life || Olivia
 - Bullet count = 6 give him second reset after 0 || DONE!
-- Reworking bullet || Rewa
-- Improve camera box || Camera box || Rewa
+- Reworking bullet || Rewa || DONE
+- Improve camera box || Camera box || Rewa || DONE
 - Crouch bug || Wenjie		|| dw wenjie i did this on accident - olivia	
 - Bullet Bug || Wenjie 
 
