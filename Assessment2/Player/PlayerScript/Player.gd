@@ -10,7 +10,8 @@ const FIREBALL = preload("res://Player/Bullet/Bullet.tscn")
 var motion = Vector2() #motion.x, motion.y 
 
 var on_ground = false
-
+var bullets = 0
+var shootable = true
 var attac = false
 
 func _physics_process(delta):
@@ -68,9 +69,11 @@ func _physics_process(delta):
 	
 	motion = move_and_slide(motion, up)
 	
-	if Input.is_action_just_pressed("ui_focus_next") && attac == false:
+	if Input.is_action_just_pressed("ui_focus_next") && attac == false && shootable == true:
 		if is_on_floor():
 			motion.x = 0
+		checkammo()
+		bullets += 1			
 		attac = true
 		$AnimatedSprite.play("Shoot")
 		var fireball = FIREBALL.instance()
@@ -86,11 +89,21 @@ func _physics_process(delta):
 			motion.x
 		attac = true
 		$AnimatedSprite.play("Duck")
-		if Input.is_action_pressed("ui_focus_next") && Input.is_action_pressed("ui_down"):
+		if Input.is_action_pressed("ui_focus_next") && Input.is_action_pressed("ui_down") && shootable == true:
 			$AnimatedSprite.play("Duckshoot")
-		#if sign
 	
 
+func checkammo():
+	if bullets == 5:
+		shootable = false
+		
+		#reloading sound here 
+		#reload UI animation here
+		yield(get_tree().create_timer(3.5), "timeout")
+		bullets = 0
+		shootable = true
+		pass
+		
 func _on_fallzone_body_entered(body):
 	#get_tree().change_scene("res://Levels/Level1.tscn") change scene
 	pass # Replace with function body.
