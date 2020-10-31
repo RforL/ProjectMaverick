@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Player/Maverick/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Tilesets/FortTiles/FortTileSets/FortTileScene.tres" type="TileSet" id=2]
@@ -8,10 +8,10 @@
 [ext_resource path="res://Tilesets/FortTiles/FortTileSets/FortTileScene3.tres" type="TileSet" id=6]
 [ext_resource path="res://Tilesets/FortTiles/FortTileSets/FortTile1.tres" type="TileSet" id=7]
 [ext_resource path="res://Teleport/Teleport.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Assets/Torch/Torch.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Fallzone.tscn" type="PackedScene" id=10]
 
 [node name="Node2D" type="Node2D"]
-
-[node name="Assets" type="Node2D" parent="."]
 
 [node name="Background Tilesets" type="Node2D" parent="."]
 
@@ -75,8 +75,79 @@ tile_data = PoolIntArray( -262000, 0, 0, -261999, 1, 0, -261998, 1, 0, -261997, 
 [node name="Other" type="Node2D" parent="."]
 position = Vector2( 8, -16 )
 
+[node name="Assets" type="Node2D" parent="."]
+
+[node name="Node2D" parent="Assets" instance=ExtResource( 9 )]
+position = Vector2( 416, -16 )
+
+[node name="Node2D3" parent="Assets" instance=ExtResource( 9 )]
+position = Vector2( 776, -120 )
+
+[node name="Node2D4" parent="Assets" instance=ExtResource( 9 )]
+position = Vector2( 1088, -88 )
+
+[node name="Node2D6" parent="Assets" instance=ExtResource( 9 )]
+position = Vector2( 1704, -184 )
+
+[node name="Node2D8" parent="Assets" instance=ExtResource( 9 )]
+position = Vector2( 2216, -96 )
+
+[node name="Node2D9" parent="Assets" instance=ExtResource( 9 )]
+position = Vector2( 2368, 3.5 )
+
+[node name="Node2D10" parent="Assets" instance=ExtResource( 9 )]
+position = Vector2( 2560, 104 )
+
+[node name="Node2D13" parent="Assets" instance=ExtResource( 9 )]
+position = Vector2( 3336, -56 )
+
+[node name="Node2D15" parent="Assets" instance=ExtResource( 9 )]
+position = Vector2( 3984, 0 )
+
+[node name="Node2D17" parent="Assets" instance=ExtResource( 9 )]
+position = Vector2( 4512, 56 )
+
+[node name="Node2D18" parent="Assets" instance=ExtResource( 9 )]
+position = Vector2( 4904, -16 )
+
+[node name="Node2D20" parent="Assets" instance=ExtResource( 9 )]
+position = Vector2( 5408, -368 )
+
+[node name="Node2D22" parent="Assets" instance=ExtResource( 9 )]
+position = Vector2( 5832, -408 )
+
+[node name="Node2D23" parent="Assets" instance=ExtResource( 9 )]
+position = Vector2( 6088, -368 )
+
+[node name="Node2D24" parent="Assets" instance=ExtResource( 9 )]
+position = Vector2( 6592, -376 )
+
+[node name="Node2D25" parent="Assets" instance=ExtResource( 9 )]
+position = Vector2( 7080, -368 )
+
+[node name="Node2D28" parent="Assets" instance=ExtResource( 9 )]
+position = Vector2( 7872, -640 )
+
+[node name="Node2D30" parent="Assets" instance=ExtResource( 9 )]
+position = Vector2( 9040, -648 )
+
+[node name="Node2D31" parent="Assets" instance=ExtResource( 9 )]
+position = Vector2( 9504, -624 )
+
+[node name="Node2D33" parent="Assets" instance=ExtResource( 9 )]
+position = Vector2( 10072, -240 )
+
+[node name="Node2D34" parent="Assets" instance=ExtResource( 9 )]
+position = Vector2( 10496, -232 )
+
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 208, 0 )
 
 [node name="Area2D" parent="." instance=ExtResource( 8 )]
 position = Vector2( 10752, -40 )
+
+[node name="Fallzone" parent="." instance=ExtResource( 10 )]
+position = Vector2( 0, 520 )
+
+[node name="Fallzone2" parent="." instance=ExtResource( 10 )]
+position = Vector2( 6864, 520 )

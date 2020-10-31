@@ -1,0 +1,684 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Tilesets/FarmTiles/grass.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 16, 16 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="grass" type="Sprite" parent="."]
+position = Vector2( 16, 16 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass2" type="Sprite" parent="."]
+position = Vector2( 16, 48 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 32, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass2"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass2/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass3" type="Sprite" parent="."]
+position = Vector2( 48, 48 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 32, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass3"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass3/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass4" type="Sprite" parent="."]
+position = Vector2( 80, 48 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 32, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass4"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass4/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass5" type="Sprite" parent="."]
+position = Vector2( 80, 80 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 64, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass5"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass5/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass6" type="Sprite" parent="."]
+position = Vector2( 48, 80 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 64, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass6"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass6/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass7" type="Sprite" parent="."]
+position = Vector2( 16, 80 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 64, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass7"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass7/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass8" type="Sprite" parent="."]
+position = Vector2( 16, 112 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 96, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass8"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass8/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass9" type="Sprite" parent="."]
+position = Vector2( 48, 112 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 96, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass9"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass9/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass10" type="Sprite" parent="."]
+position = Vector2( 80, 112 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 96, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass10"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass10/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass11" type="Sprite" parent="."]
+position = Vector2( 128, 48 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 32, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass11"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass11/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass12" type="Sprite" parent="."]
+position = Vector2( 160, 48 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 128, 32, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass12"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass12/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass13" type="Sprite" parent="."]
+position = Vector2( 160, 80 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 128, 64, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass13"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass13/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass14" type="Sprite" parent="."]
+position = Vector2( 128, 80 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 64, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass14"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass14/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass15" type="Sprite" parent="."]
+position = Vector2( 128, 120 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 96, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass15"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass15/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass16" type="Sprite" parent="."]
+position = Vector2( 160, 120 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 128, 96, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass16"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass16/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass17" type="Sprite" parent="."]
+position = Vector2( 160, 152 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 128, 128, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass17"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass17/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass18" type="Sprite" parent="."]
+position = Vector2( 128, 152 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 128, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass18"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass18/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass19" type="Sprite" parent="."]
+position = Vector2( 16, 160 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 128, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass19"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass19/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass20" type="Sprite" parent="."]
+position = Vector2( 48, 160 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 128, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass20"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass20/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass21" type="Sprite" parent="."]
+position = Vector2( 80, 160 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 128, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass21"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass21/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass22" type="Sprite" parent="."]
+position = Vector2( 80, 192 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 160, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass22"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass22/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass23" type="Sprite" parent="."]
+position = Vector2( 48, 192 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 160, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass23"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass23/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass24" type="Sprite" parent="."]
+position = Vector2( 16, 192 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 160, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass24"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass24/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass25" type="Sprite" parent="."]
+position = Vector2( 16, 224 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 192, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass25"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass25/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass26" type="Sprite" parent="."]
+position = Vector2( 48, 224 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 192, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass26"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass26/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass27" type="Sprite" parent="."]
+position = Vector2( 80, 224 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 192, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass27"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass27/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass28" type="Sprite" parent="."]
+position = Vector2( 144, 208 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 160, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass28"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass28/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass29" type="Sprite" parent="."]
+position = Vector2( 176, 208 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 128, 160, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass29"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass29/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass30" type="Sprite" parent="."]
+position = Vector2( 176, 240 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 128, 192, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass30"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass30/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass31" type="Sprite" parent="."]
+position = Vector2( 144, 240 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 192, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass31"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass31/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass32" type="Sprite" parent="."]
+position = Vector2( 216, 144 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 160, 32, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass32"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass32/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass33" type="Sprite" parent="."]
+position = Vector2( 248, 144 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 192, 32, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass33"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass33/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass34" type="Sprite" parent="."]
+position = Vector2( 280, 144 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 224, 32, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass34"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass34/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass35" type="Sprite" parent="."]
+position = Vector2( 280, 176 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 224, 64, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass35"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass35/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass36" type="Sprite" parent="."]
+position = Vector2( 248, 176 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 192, 64, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass36"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass36/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass37" type="Sprite" parent="."]
+position = Vector2( 216, 176 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 160, 64, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass37"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass37/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass38" type="Sprite" parent="."]
+position = Vector2( 216, 208 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 160, 96, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass38"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass38/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass39" type="Sprite" parent="."]
+position = Vector2( 248, 208 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 192, 96, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass39"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass39/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass40" type="Sprite" parent="."]
+position = Vector2( 280, 208 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 224, 96, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass40"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass40/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass41" type="Sprite" parent="."]
+position = Vector2( 336, 144 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 256, 32, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass41"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass41/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass42" type="Sprite" parent="."]
+position = Vector2( 368, 144 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 288, 32, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass42"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass42/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass43" type="Sprite" parent="."]
+position = Vector2( 368, 176 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 288, 64, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass43"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass43/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass44" type="Sprite" parent="."]
+position = Vector2( 336, 176 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 256, 64, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass44"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass44/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass45" type="Sprite" parent="."]
+position = Vector2( 336, 216 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 256, 96, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass45"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass45/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass46" type="Sprite" parent="."]
+position = Vector2( 368, 216 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 288, 96, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass46"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass46/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass47" type="Sprite" parent="."]
+position = Vector2( 368, 248 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 288, 128, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass47"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass47/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass48" type="Sprite" parent="."]
+position = Vector2( 336, 248 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 256, 128, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass48"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass48/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass49" type="Sprite" parent="."]
+position = Vector2( 336, 288 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 256, 160, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass49"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass49/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass50" type="Sprite" parent="."]
+position = Vector2( 368, 288 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 288, 160, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass50"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass50/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass51" type="Sprite" parent="."]
+position = Vector2( 368, 320 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 288, 192, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass51"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass51/Area2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="grass52" type="Sprite" parent="."]
+position = Vector2( 336, 320 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 256, 192, 32, 32 )
+
+[node name="Area2D" type="StaticBody2D" parent="grass52"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grass52/Area2D"]
+visible = false
+shape = SubResource( 1 )
