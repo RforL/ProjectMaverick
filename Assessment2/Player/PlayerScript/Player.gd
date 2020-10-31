@@ -104,10 +104,6 @@ func checkammo():
 		shootable = true
 		pass
 		
-func _on_fallzone_body_entered(body):
-	#get_tree().change_scene("res://Levels/Level1.tscn") change scene
-	pass # Replace with function body.
-	
 
 func _on_AnimatedSprite_animation_finished():
 	attac = false
