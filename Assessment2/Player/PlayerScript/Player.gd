@@ -73,14 +73,14 @@ func _physics_process(delta):
 		if is_on_floor():
 			motion.x = 0
 		checkammo()
-		bullets += 1			
+		bullets += 1
 		attac = true
 		$AnimatedSprite.play("Shoot")
 		var fireball = FIREBALL.instance()
 		if sign($Position2D.position.x) == 1:
 			fireball.set_fireball_direction(1)
 		else:
-			fireball.set_fireball_direction(1)
+			fireball.set_fireball_direction(-1)
 		get_parent().add_child(fireball)
 		fireball.position = $Position2D.global_position
 		
