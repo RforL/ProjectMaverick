@@ -16,17 +16,17 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Hunt" type="Sprite" parent="."]
-position = Vector2( 512, 320 )
-scale = Vector2( 1.34246, 1.34246 )
-texture = ExtResource( 8 )
-
 [node name="MarginContainer" type="MarginContainer" parent="."]
 anchor_right = 1.0
 anchor_bottom = 0.96
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Hunt" type="Sprite" parent="."]
+position = Vector2( 640, 320 )
+scale = Vector2( 1.39954, 1.39954 )
+texture = ExtResource( 8 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 margin_right = 1024.0
