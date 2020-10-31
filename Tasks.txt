@@ -8,7 +8,7 @@ Player
 - Bullet count = 6 give him second reset after 0 || DONE!
 - Reworking bullet || Rewa
 - Improve camera box || Camera box || Rewa
-- Crouch bug || Wenjie
+- Crouch bug || Wenjie		|| dw wenjie i did this on accident - olivia	
 - Bullet Bug || Wenjie 
 
 UI - Ray

@@ -19,7 +19,7 @@ func _physics_process(delta):
 	motion.y += gravity
 	var friction = false
 	
-	if Input.is_action_pressed("ui_right"):	
+	if Input.is_action_pressed("ui_right") && !Input.is_action_pressed("ui_down"):	
 		if attac == false || is_on_floor() == false:	
 			motion.x = min(motion.x + acceleration, maxspeed)
 			if attac == false:
@@ -30,8 +30,8 @@ func _physics_process(delta):
 
 
 		
-	elif Input.is_action_pressed("ui_left"):
-		if attac == false || is_on_floor() == false:	
+	elif Input.is_action_pressed("ui_left") && !Input.is_action_pressed("ui_down"):
+		if attac == false || is_on_floor() == false:
 			motion.x = max(motion.x - acceleration, -maxspeed)
 			if attac == false:
 				$AnimatedSprite.flip_h = true
