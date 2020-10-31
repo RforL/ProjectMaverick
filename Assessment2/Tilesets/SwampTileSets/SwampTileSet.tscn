@@ -8,7 +8,8 @@ extents = Vector2( 16, 16 )
 [node name="Node2D" type="Node2D"]
 
 [node name="Tileset" type="Sprite" parent="."]
-position = Vector2( 24, 0 )
+position = Vector2( 16, 8 )
+scale = Vector2( 1.75, 1.75 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 24, 24 )
