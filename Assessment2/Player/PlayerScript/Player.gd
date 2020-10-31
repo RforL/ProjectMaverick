@@ -13,6 +13,7 @@ var on_ground = false
 var bullets = 0
 var shootable = true
 var attac = false
+var damagable = true
 
 func _physics_process(delta):
 	
@@ -109,4 +110,13 @@ func _on_AnimatedSprite_animation_finished():
 	pass # Replace with function body.
 	
 func damage():
-	health -= 1
+	if damagable == true:
+		damagable = false
+		health -= 1
+		print(health) #debug
+		if health == 0:
+			print("Death Here!") #trigger death sound and screen
+		yield(get_tree().create_timer(1), "timeout") #timer to see if maverick is getting rekt by colliding with someone
+		damagable = true
+
+

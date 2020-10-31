@@ -13,6 +13,7 @@ func _ready():
 		$AnimatedSprite.flip_h = false
 	$floor_checker.position.x = $CollisionShape2D.shape.get_extents().x * direction
 	$floor_checker.enabled = detects_cliffs
+	
 
 func dead():
 	is_dead = true
@@ -23,6 +24,7 @@ func dead():
 
 func _on_Timer_timeout():
 	queue_free()
+		
 
 func _physics_process(delta):
 	if is_dead == false:
@@ -41,3 +43,4 @@ func _physics_process(delta):
 			for i in range (get_slide_count()):
 				if "Player" in get_slide_collision(i).collider.name:
 					get_slide_collision(i).collider.damage()
+
