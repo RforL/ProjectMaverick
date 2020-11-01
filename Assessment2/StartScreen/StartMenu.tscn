@@ -10,8 +10,10 @@
 [ext_resource path="res://StartScreen/Menu/Hunt.png" type="Texture" id=8]
 
 [node name="Control" type="Control"]
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_right = 1.266
+anchor_bottom = 1.133
+margin_right = -0.384033
+margin_bottom = 0.200012
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -53,7 +55,7 @@ __meta__ = {
 }
 
 [node name="Start" type="TextureButton" parent="Buttons"]
-margin_right = 951.0
+margin_right = 1223.0
 margin_bottom = 72.0
 disabled = true
 texture_normal = ExtResource( 6 )
@@ -61,7 +63,7 @@ texture_focused = ExtResource( 7 )
 
 [node name="Start2" type="TextureButton" parent="Buttons"]
 margin_top = 76.0
-margin_right = 951.0
+margin_right = 1223.0
 margin_bottom = 149.0
 disabled = true
 texture_normal = ExtResource( 4 )
@@ -69,7 +71,7 @@ texture_focused = ExtResource( 2 )
 
 [node name="Start3" type="TextureButton" parent="Buttons"]
 margin_top = 153.0
-margin_right = 951.0
+margin_right = 1223.0
 margin_bottom = 225.0
 disabled = true
 texture_normal = ExtResource( 6 )

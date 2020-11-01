@@ -8,16 +8,12 @@ const jump = -700
 const FIREBALL = preload("res://Player/Bullet/Bullet.tscn")
 
 var motion = Vector2() #motion.x, motion.y 
-var health = 2
+var health = 5
 var on_ground = false
-var bullets = 6
+var bullets = 0
 var shootable = true
 var attac = false
 var damagable = true
-
-
-func _ready():
-	get_node("/root/Hud")._healthbar(health)
 
 func _physics_process(delta):
 	
@@ -77,8 +73,8 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("ui_focus_next") && attac == false && shootable == true:
 		if is_on_floor():
 			motion.x = 0
-		bullets -= 1
 		checkammo()
+		bullets += 1
 		attac = true
 		$AnimatedSprite.play("Shoot")
 		var fireball = FIREBALL.instance()
@@ -99,17 +95,15 @@ func _physics_process(delta):
 	
 
 func checkammo():
-	if bullets == 0:
+	if bullets == 5:
 		shootable = false
 		
 		#reloading sound here 
 		#reload UI animation here
-		get_node("/root/Hud")._reload()
 		yield(get_tree().create_timer(3.5), "timeout")
-		bullets = 6
+		bullets = 0
 		shootable = true
-	get_node("/root/Hud")._ammo(bullets)
-	pass
+		pass
 		
 func _on_AnimatedSprite_animation_finished():
 	attac = false
@@ -122,8 +116,6 @@ func damage():
 		print(health) #debug
 		if health == 0:
 			print("Death Here!") #trigger death sound and screen
-		#get_node("root/HUD").reload
-		get_node("/root/Hud")._healthbar(health)
 		yield(get_tree().create_timer(1), "timeout") #timer to see if maverick is getting rekt by colliding with someone
 		damagable = true
 
