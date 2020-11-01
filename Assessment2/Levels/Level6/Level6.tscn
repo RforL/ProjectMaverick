@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Player/Maverick/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Tilesets/CityTiles/CityTileSets/CityCollision.tres" type="TileSet" id=2]
 [ext_resource path="res://Tilesets/CityTiles/CityTileSets/CityFront.tres" type="TileSet" id=3]
 [ext_resource path="res://Tilesets/CityTiles/CityTileSets/CityBehind.tres" type="TileSet" id=4]
+[ext_resource path="res://Backgrounds/Level5BGGeorgiaCity/cityscape20000.png" type="Texture" id=5]
+[ext_resource path="res://Backgrounds/Level5BGGeorgiaCity/city.png" type="Texture" id=6]
 
 [node name="Node2D" type="Node2D"]
 
@@ -27,3 +29,21 @@ tile_data = PoolIntArray( 393375, 5, 0, 458911, 7, 0, 524447, 6, 0, 589983, 6, 0
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 244.977, 273.518 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.7, 0.7 )
+
+[node name="cityscape20000" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 969.231, 100.483 )
+scale = Vector2( 5.32536, 3.77496 )
+texture = ExtResource( 5 )
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.8, 0.8 )
+
+[node name="cityscape20000" type="Sprite" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2( 963.534, 282.957 )
+scale = Vector2( 3.3881, 3.77496 )
+texture = ExtResource( 6 )
