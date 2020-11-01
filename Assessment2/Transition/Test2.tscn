@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Transition/Transition2.gd" type="Script" id=1]
 [ext_resource path="res://Transition/Test2.gd" type="Script" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Assets/Fonts/Map/Map2.png" type="Texture" id=5]
 [ext_resource path="res://Assets/Fonts/Map/Map5.png" type="Texture" id=6]
 [ext_resource path="res://Assets/Fonts/WEST____.TTF" type="DynamicFontData" id=7]
+[ext_resource path="res://Audio/HomeScreenAudio/30_Second-2020-08-14_-_Old_West_Gunslingers_-_www.FesliyanStudios.com_Steve_Oxen.wav" type="AudioStream" id=8]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -30,7 +31,6 @@ script = ExtResource( 2 )
 scale = Vector2( 1.701, 1.45631 )
 frames = SubResource( 1 )
 animation = "Level 2"
-frame = 2
 playing = true
 centered = false
 
@@ -52,4 +52,7 @@ __meta__ = {
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.065
 autostart = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 8 )
 [connection signal="timeout" from="Timer" to="RichTextLabel" method="_on_Timer_timeout"]
