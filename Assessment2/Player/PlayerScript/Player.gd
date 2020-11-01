@@ -56,6 +56,8 @@ func _physics_process(delta):
 		if attac == false:
 			on_ground = false
 			if Input.is_action_just_pressed("ui_up") || is_on_floor() == false:
+				if Input.is_action_just_pressed("ui_up"):
+					$jump.play() 
 				motion.y = jump
 			if friction == true:
 				motion.x = lerp(motion.x, 0, 0.1)
@@ -117,6 +119,7 @@ func damage():
 	if damagable == true:
 		damagable = false
 		health -= 1
+		$pain.play()
 		print(health) #debug
 		if health == 0:
 			print("Death Here!") #trigger death sound and screen
