@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/30_Second-2020-08-14_-_Old_West_Gunslingers_-_www.FesliyanStudios.com_Steve_Oxen.wav-4677bfae83d55089ed29b849e4c84123.sample"
+
+[deps]
+
+source_file="res://Audio/HomeScreenAudio/30_Second-2020-08-14_-_Old_West_Gunslingers_-_www.FesliyanStudios.com_Steve_Oxen.wav"
+dest_files=[ "res://.import/30_Second-2020-08-14_-_Old_West_Gunslingers_-_www.FesliyanStudios.com_Steve_Oxen.wav-4677bfae83d55089ed29b849e4c84123.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
