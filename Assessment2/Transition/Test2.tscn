@@ -30,7 +30,7 @@ script = ExtResource( 2 )
 scale = Vector2( 1.701, 1.45631 )
 frames = SubResource( 1 )
 animation = "Level 2"
-frame = 3
+frame = 2
 playing = true
 centered = false
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://Player/Maverick/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Backgrounds/Level2BGLousianaBayous/background_1.png" type="Texture" id=2]
@@ -25,6 +25,7 @@
 [ext_resource path="res://Teleport/Teleport.tscn" type="PackedScene" id=23]
 [ext_resource path="res://Assets/Crate/Crate1.tscn" type="PackedScene" id=24]
 [ext_resource path="res://Assets/Fence/Fence1.tscn" type="PackedScene" id=25]
+[ext_resource path="res://Enemy/Enemy.tscn" type="PackedScene" id=26]
 
 [node name="Node2D" type="Node2D"]
 
@@ -300,7 +301,16 @@ format = 1
 tile_data = PoolIntArray( 786436, 16, 0, 786437, 16, 0, 786438, 16, 0, 786439, 16, 0, 786440, 16, 0, 786441, 16, 0, 786442, 16, 0, 786443, 16, 0, 786444, 16, 0, 786445, 16, 0, 786446, 16, 0, 786447, 16, 0, 786448, 16, 0, 786449, 16, 0, 786450, 16, 0, 786451, 16, 0, 786452, 16, 0, 786453, 16, 0, 786454, 16, 0, 786455, 16, 0, 786456, 16, 0, 786457, 16, 0, 786458, 16, 0, 786459, 16, 0, 786460, 16, 0, 786461, 16, 0, 786462, 16, 0, 786463, 16, 0, 786464, 16, 0, 786465, 16, 0, 786466, 16, 0, 786467, 16, 0, 786468, 16, 0, 786469, 16, 0, 786470, 16, 0, 786471, 16, 0, 786472, 16, 0, 786473, 16, 0, 786474, 16, 0, 786475, 16, 0, 786476, 16, 0, 786477, 16, 0, 786478, 16, 0, 786479, 16, 0, 786480, 16, 0, 786481, 16, 0, 786482, 16, 0, 786483, 16, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 6600.06, 248.692 )
+position = Vector2( 386.134, 283.97 )
+
+[node name="Enemy" parent="Player" instance=ExtResource( 26 )]
+position = Vector2( 1226.13, 38.2749 )
+
+[node name="Enemy2" parent="Player" instance=ExtResource( 26 )]
+position = Vector2( 4089.8, 31.9253 )
+
+[node name="Enemy3" parent="Player" instance=ExtResource( 26 )]
+position = Vector2( 5702.6, 41.4497 )
 
 [node name="Node2D2" parent="." instance=ExtResource( 25 )]
 position = Vector2( 2232, 356.435 )
