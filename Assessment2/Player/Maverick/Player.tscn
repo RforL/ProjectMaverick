@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://Player/PlayerScript/Player.gd" type="Script" id=1]
 [ext_resource path="res://Player/Idle/still6.png" type="Texture" id=2]
@@ -22,6 +22,8 @@
 [ext_resource path="res://Player/Fall/fall.png" type="Texture" id=20]
 [ext_resource path="res://Audio/PlayerAudio/gunshot.wav" type="AudioStream" id=21]
 [ext_resource path="res://Audio/PlayerAudio/dryfire.wav" type="AudioStream" id=22]
+[ext_resource path="res://Audio/PlayerAudio/jump.wav" type="AudioStream" id=23]
+[ext_resource path="res://Audio/PlayerAudio/damage.wav" type="AudioStream" id=24]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -96,4 +98,10 @@ stream = ExtResource( 21 )
 
 [node name="dryfire" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 22 )
+
+[node name="jump" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 23 )
+
+[node name="pain" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 24 )
 [connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
