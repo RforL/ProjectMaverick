@@ -77,10 +77,11 @@ tile_data = PoolIntArray( -262000, 0, 0, -261999, 1, 0, -261998, 1, 0, -261997, 
 position = Vector2( 8, -16 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 208, 0 )
+position = Vector2( 10529.3, -128.512 )
 
 [node name="Area2D" parent="." instance=ExtResource( 1 )]
 position = Vector2( 10752, -40 )
+next_world = "res://Transition/Test5.tscn"
 
 [node name="Fallzone" parent="." instance=ExtResource( 9 )]
 position = Vector2( 7150.09, 668.521 )

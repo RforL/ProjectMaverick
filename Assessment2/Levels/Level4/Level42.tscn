@@ -125,7 +125,8 @@ position = Vector2( 5888, -368 )
 position = Vector2( 6072, -184 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 208, 0 )
+position = Vector2( 7506, -352 )
 
 [node name="Area2D" parent="." instance=ExtResource( 11 )]
-position = Vector2( 7712, -464 )
+position = Vector2( 7723, -304 )
+next_world = "res://Transition/Test5.tscn"

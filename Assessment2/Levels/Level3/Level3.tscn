@@ -141,10 +141,11 @@ position = Vector2( 10072, -240 )
 position = Vector2( 10496, -232 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 208, 0 )
+position = Vector2( 10569.9, -118.928 )
 
 [node name="Area2D" parent="." instance=ExtResource( 8 )]
 position = Vector2( 10752, -40 )
+next_world = "res://Wenjie/Level32.tscn"
 
 [node name="Fallzone" parent="." instance=ExtResource( 10 )]
 position = Vector2( 0, 520 )

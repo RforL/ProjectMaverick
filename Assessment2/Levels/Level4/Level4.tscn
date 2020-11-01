@@ -139,10 +139,11 @@ position = Vector2( 0, -8 )
 
 [node name="Area2D" parent="Others" instance=ExtResource( 7 )]
 position = Vector2( 8216, -400 )
+next_world = "res://Levels/Level4/Level42.tscn"
 
 [node name="Area2D2" parent="Others" instance=ExtResource( 7 )]
 position = Vector2( 8568, -80 )
 rotation = -1.56706
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 5744, -472 )
+position = Vector2( 7991.76, -240.239 )

@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://Transition/DialogBox.gd" type="Script" id=1]
+[ext_resource path="res://Transition/Transition2.gd" type="Script" id=1]
 [ext_resource path="res://Transition/Test2.gd" type="Script" id=2]
 [ext_resource path="res://Assets/Fonts/Map/Map4.png" type="Texture" id=3]
 [ext_resource path="res://Assets/Fonts/Map/Map3.png" type="Texture" id=4]
@@ -30,11 +30,7 @@ script = ExtResource( 2 )
 scale = Vector2( 1.701, 1.45631 )
 frames = SubResource( 1 )
 animation = "Level 2"
-<<<<<<< Updated upstream
-frame = 1
-=======
 frame = 3
->>>>>>> Stashed changes
 playing = true
 centered = false
 
