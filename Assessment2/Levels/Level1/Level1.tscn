@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Tilesets/Desert Tileset/DesertTileSets/DesertTileSets2.tres" type="TileSet" id=1]
 [ext_resource path="res://Tilesets/Desert Tileset/DesertTileSets/DesertTileSets.tres" type="TileSet" id=2]
@@ -14,6 +14,7 @@
 [ext_resource path="res://Assets/Greenery/Grass (1).png" type="Texture" id=12]
 [ext_resource path="res://Assets/Greenery/Cactus (1).png" type="Texture" id=13]
 [ext_resource path="res://Assets/Greenery/Cactus (2).png" type="Texture" id=14]
+[ext_resource path="res://Enemy/Enemy.tscn" type="PackedScene" id=15]
 
 [node name="Node2D" type="Node2D"]
 
@@ -295,3 +296,6 @@ position = Vector2( 7040, 512 )
 
 [node name="Area2D" parent="." instance=ExtResource( 7 )]
 position = Vector2( 11136, 151 )
+
+[node name="Enemy" parent="." instance=ExtResource( 15 )]
+position = Vector2( 2707.05, 136.154 )

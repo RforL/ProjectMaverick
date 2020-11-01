@@ -116,6 +116,9 @@ func damage():
 		print(health) #debug
 		if health == 0:
 			print("Death Here!") #trigger death sound and screen
+		#get_node("root/HUD").reload
+		else:
+			get_node("/root/Hud")._healthbar(health)
 		yield(get_tree().create_timer(1), "timeout") #timer to see if maverick is getting rekt by colliding with someone
 		damagable = true
 

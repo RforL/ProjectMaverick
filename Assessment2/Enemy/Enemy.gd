@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-const FIREBALL = preload("res://Enemy/Enemy Bullet/EnemyBullet.tscn")
+const FIREBALL = preload("res://Enemy/EnemyBullet/EnemyBullet.tscn")
 
 var speed = 20
 var velocity = Vector2()
