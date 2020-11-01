@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://Player/PlayerScript/Player.gd" type="Script" id=1]
 [ext_resource path="res://Player/Idle/still6.png" type="Texture" id=2]
@@ -20,6 +20,7 @@
 [ext_resource path="res://Player/Shoot/shoot1.png" type="Texture" id=18]
 [ext_resource path="res://Player/Jump/jump.png" type="Texture" id=19]
 [ext_resource path="res://Player/Fall/fall.png" type="Texture" id=20]
+[ext_resource path="res://Audio/PlayerAudio/gunshot.wav" type="AudioStream" id=21]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -40,7 +41,7 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 16 ) ],
 "loop": true,
-"name": "Duck",
+"name": "Duckshoot",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 5 ), ExtResource( 9 ), ExtResource( 4 ), ExtResource( 6 ) ],
@@ -88,4 +89,7 @@ drag_margin_h_enabled = true
 drag_margin_v_enabled = true
 smoothing_enabled = true
 editor_draw_limits = true
+
+[node name="gunshot" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 21 )
 [connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]

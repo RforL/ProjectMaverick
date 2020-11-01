@@ -95,6 +95,7 @@ func _physics_process(delta):
 	
 
 func checkammo():
+	$gunshot.play()
 	if bullets == 0:
 		shootable = false
 		#reloading sound here 
