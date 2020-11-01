@@ -32,15 +32,23 @@ func _physics_process(delta):
 			direction = direction * 1
 			$AnimatedSprite.flip_h = not $AnimatedSprite.flip_h
 			$floor_checker.position.x = $CollisionShape2D.shape.get_extents().x * direction
-			
+		
 		velocity.y += 20
 		
 		velocity.x = speed * direction
 		
 		velocity = move_and_slide(velocity, Vector2.UP)
-		
+
 		if get_slide_count() > 0:
 			for i in range (get_slide_count()):
 				if "Player" in get_slide_collision(i).collider.name:
 					get_slide_collision(i).collider.damage()
 
+
+
+func _on_PlayerDetect_body_entered(body):
+	player = body
+
+
+func _on_PlayerDetect_body_exited(body):
+	player = null
