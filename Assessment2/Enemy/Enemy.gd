@@ -5,11 +5,13 @@ const FIREBALL = preload("res://Enemy/EnemyBullet/EnemyBullet.tscn")
 var speed = 20
 var velocity = Vector2()
 var player = null
+
+
 export var direction = -1
 export var detects_cliffs = true
 
 var is_dead = false
-var is_detected = false
+var is_attack = false
 
 func _ready():
 	if direction == -1:
@@ -25,8 +27,20 @@ func dead():
 	$CollisionShape2D.disabled = true
 	$Timer.start()
 
-func _physics_process(delta):
-	if is_dead == false:
+func attack():
+	is_attack = true
+	velocity = Vector2(0,0)
+	$AnimatedSprite.play("Shoot")
+	var fireball = FIREBALL.instance()
+	if sign($Position2D.position.x) == 1:
+		fireball.set_fireball_direction(1)
+	else:
+		fireball.set_fireball_direction(-1)
+	get_parent().add_child(fireball)
+	fireball.position = $Position2D.global_position
+	
+func walk():
+	if is_dead == false && is_attack == false:
 		
 		if is_on_wall() or not $floor_checker.is_colliding() and detects_cliffs and is_on_floor():
 			direction = direction * -1
@@ -44,21 +58,21 @@ func _physics_process(delta):
 				if "Player" in get_slide_collision(i).collider.name:
 					get_slide_collision(i).collider.damage()
 
+func _physics_process(delta):
+	walk()
+
 func _on_Timer_timeout():
 	queue_free()
 
 
 func _on_PlayerDetect_body_entered(body):
+	if body.name == "Player":
 		player = body
-		$AnimatedSprite.play("Shoot")
-		var fireball = FIREBALL.instance()
-		if sign($Position2D.position.x) == 1:
-			fireball.set_fireball_direction(1)
-		else:
-			fireball.set_fireball_direction(-1)
-		get_parent().add_child(fireball)
-		fireball.position = $Position2D.global_position
+		attack()
 
 
 func _on_PlayerDetect_body_exited(body):
-	player = null
+	if body.name == "Player":
+		player = null
+		is_attack = false
+		walk()

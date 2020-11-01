@@ -22,7 +22,5 @@ func _on_VisibilityNotifier2D_screen_exited():
 	queue_free()
 
 func _on_Bullet_body_entered(body):
-	#if "Player" in body.name:
-		#player.damage()
 	get_node("/root/Node2D/Player").damage()
 	queue_free()

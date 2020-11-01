@@ -90,7 +90,7 @@ position = Vector2( 4.76837e-07, -9.53674e-07 )
 scale = Vector2( 0.4, 0.4 )
 frames = SubResource( 2 )
 animation = "Shoot"
-frame = 1
+frame = 10
 playing = true
 
 [node name="Position2D" type="Position2D" parent="."]
