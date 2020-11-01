@@ -1,4 +1,4 @@
-extends Polygon2D
+extends RichTextLabel
 
 
 # Declare member variables here. Examples:

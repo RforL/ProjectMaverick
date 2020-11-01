@@ -8,7 +8,6 @@ extends Polygon2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	get_node("/root/Hud").get_child(0).hide()
 	pass # Replace with function body.
 
 

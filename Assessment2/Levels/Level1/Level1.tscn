@@ -288,7 +288,7 @@ position = Vector2( 4944, 170.004 )
 position = Vector2( 5640, 107.117 )
 
 [node name="Player" parent="." instance=ExtResource( 6 )]
-position = Vector2( 10809.4, 89.7043 )
+position = Vector2( 288.7, 175.221 )
 
 [node name="Fallzone" parent="." instance=ExtResource( 5 )]
 position = Vector2( -77.4824, 516.769 )
@@ -302,3 +302,9 @@ next_world = "res://Levels/Level1/Level12.tscn"
 
 [node name="Enemy" parent="." instance=ExtResource( 15 )]
 position = Vector2( 1390.9, 248.28 )
+
+[node name="Enemy2" parent="." instance=ExtResource( 15 )]
+position = Vector2( 5868.3, 129.486 )
+
+[node name="Enemy3" parent="." instance=ExtResource( 15 )]
+position = Vector2( 9845.07, 126.658 )

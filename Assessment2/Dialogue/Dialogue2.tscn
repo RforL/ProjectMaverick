@@ -1,15 +1,13 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Assets/Fonts/Map/Map6.png" type="Texture" id=1]
-[ext_resource path="res://Assets/Fonts/Map/Map7.png" type="Texture" id=2]
-[ext_resource path="res://Transition/Test3.gd" type="Script" id=3]
-[ext_resource path="res://Transition/Transition3.gd" type="Script" id=4]
-[ext_resource path="res://Assets/Fonts/Map/Map5.png" type="Texture" id=6]
+[ext_resource path="res://Dialogue/DialogueText2.gd" type="Script" id=1]
+[ext_resource path="res://Dialogue/Dialogue3.gd" type="Script" id=2]
+[ext_resource path="res://Assets/DialogueScreen/Image_3.png" type="Texture" id=3]
 [ext_resource path="res://Assets/Fonts/WEST____.TTF" type="DynamicFontData" id=7]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 6 ), ExtResource( 1 ), ExtResource( 2 ) ],
+"frames": [ ExtResource( 3 ) ],
 "loop": true,
 "name": "Level 2",
 "speed": 0.8
@@ -23,13 +21,13 @@ font_data = ExtResource( 7 )
 [node name="Polygon2D" type="Polygon2D"]
 color = Color( 0.101961, 0.101961, 0.101961, 1 )
 polygon = PoolVector2Array( 192, 384, 192, 512, 832, 512, 832, 384 )
-script = ExtResource( 3 )
+script = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-scale = Vector2( 1.701, 1.45631 )
+position = Vector2( -30.8578, -13.2771 )
+scale = Vector2( 1.36558, 1.07983 )
 frames = SubResource( 1 )
 animation = "Level 2"
-frame = 2
 playing = true
 centered = false
 
@@ -39,11 +37,11 @@ margin_top = 471.24
 margin_right = 793.449
 margin_bottom = 551.24
 custom_fonts/normal_font = SubResource( 2 )
-custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_colors/default_color = Color( 0.976471, 0.972549, 0.972549, 1 )
 custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 bbcode_enabled = true
-script = ExtResource( 4 )
+script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }

@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Player/Maverick/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Tilesets/FortTiles/FortTileSets/FortTileScene.tres" type="TileSet" id=2]
@@ -11,8 +11,11 @@
 [ext_resource path="res://Tilesets/FortTiles/FortTileSets/FortTile4.tres" type="TileSet" id=9]
 [ext_resource path="res://Assets/Torch/Torch.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Teleport/Teleport.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Enemy/Enemy.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Levels/Level4/Level42.gd" type="Script" id=13]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource( 13 )
 
 [node name="Background" type="Node2D" parent="."]
 
@@ -125,7 +128,23 @@ position = Vector2( 5888, -368 )
 position = Vector2( 6072, -184 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 208, 0 )
+position = Vector2( 242, 70 )
 
 [node name="Area2D" parent="." instance=ExtResource( 11 )]
-position = Vector2( 7712, -464 )
+position = Vector2( 7723, -304 )
+next_world = "res://Transition/Test5.tscn"
+
+[node name="Enemy" parent="." instance=ExtResource( 12 )]
+position = Vector2( 1553.1, -124.867 )
+
+[node name="Enemy2" parent="." instance=ExtResource( 12 )]
+position = Vector2( 3441.56, 68.974 )
+
+[node name="Enemy3" parent="." instance=ExtResource( 12 )]
+position = Vector2( 5085.05, 0 )
+
+[node name="Enemy4" parent="." instance=ExtResource( 12 )]
+position = Vector2( 6739.23, -128.434 )
+
+[node name="Enemy5" parent="." instance=ExtResource( 12 )]
+position = Vector2( 7489.62, -321.086 )
