@@ -1,0 +1,22 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Map/Map4.png" type="Texture" id=1]
+[ext_resource path="res://Map/Map5.png" type="Texture" id=2]
+[ext_resource path="res://Map/Map2.png" type="Texture" id=3]
+[ext_resource path="res://Map/Map3.png" type="Texture" id=4]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 1 ), ExtResource( 2 ) ],
+"loop": false,
+"name": "First Transition",
+"speed": 1.0
+} ]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D"]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "First Transition"
+frame = 3
+centered = false
