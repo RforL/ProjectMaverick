@@ -21,7 +21,12 @@ config/icon="res://icon.png"
 
 [autoload]
 
-Hud="*res://Interface/HUD.gd"
+Hud="*res://Interface/HUD.tscn"
+
+[display]
+
+window/size/resizable=false
+window/stretch/aspect="expand"
 
 [layer_names]
 
