@@ -84,6 +84,8 @@ func _physics_process(delta):
 			fireball.set_fireball_direction(-1)
 		get_parent().add_child(fireball)
 		fireball.position = $Position2D.global_position
+	elif Input.is_action_just_pressed("ui_focus_next") && attac == false && shootable == false:
+		$dryfire.play()
 		
 	if Input.is_action_pressed("ui_down") && attac == false:
 		if is_on_floor():
