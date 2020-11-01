@@ -10,7 +10,7 @@ const FIREBALL = preload("res://Player/Bullet/Bullet.tscn")
 var motion = Vector2() #motion.x, motion.y 
 var health = 5
 var on_ground = false
-var bullets = 0
+var bullets = 6
 var shootable = true
 var attac = false
 var damagable = true
@@ -73,8 +73,8 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("ui_focus_next") && attac == false && shootable == true:
 		if is_on_floor():
 			motion.x = 0
+		bullets -= 1
 		checkammo()
-		bullets += 1
 		attac = true
 		$AnimatedSprite.play("Shoot")
 		var fireball = FIREBALL.instance()
@@ -95,15 +95,16 @@ func _physics_process(delta):
 	
 
 func checkammo():
-	if bullets == 5:
+	if bullets == 0:
 		shootable = false
-		
 		#reloading sound here 
 		#reload UI animation here
+		get_node("/root/Hud")._reload()
 		yield(get_tree().create_timer(3.5), "timeout")
-		bullets = 0
+		bullets = 6
 		shootable = true
-		pass
+	get_node("/root/Hud")._ammo(bullets)
+	pass
 		
 func _on_AnimatedSprite_animation_finished():
 	attac = false
