@@ -1,4 +1,4 @@
-extends CollisionPolygon2D
+extends Polygon2D
 
 
 func _ready():
