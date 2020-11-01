@@ -5,6 +5,7 @@ const FIREBALL = preload("res://Enemy/EnemyBullet/EnemyBullet.tscn")
 var speed = 20
 var velocity = Vector2()
 var player = null
+var inbody = false
 
 
 export var direction = -1
@@ -67,12 +68,17 @@ func _on_Timer_timeout():
 
 func _on_PlayerDetect_body_entered(body):
 	if body.name == "Player":
+		inbody = true
 		player = body
-		attack()
+		while(inbody == true):
+			attack()
+			yield(get_tree().create_timer(1), "timeout")
+		
 
 
 func _on_PlayerDetect_body_exited(body):
 	if body.name == "Player":
+		inbody = false
 		player = null
 		is_attack = false
 		walk()
