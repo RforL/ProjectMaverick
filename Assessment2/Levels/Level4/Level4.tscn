@@ -1,7 +1,6 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Player/Maverick/Player.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Backgrounds/Level5BGGeorgiaCity/cityscape20000.png" type="Texture" id=2]
 [ext_resource path="res://Tilesets/CityTiles/CityTileSets/Road.tres" type="TileSet" id=3]
 [ext_resource path="res://Tilesets/CityTiles/CityTileSets/CityTileSet1.tres" type="TileSet" id=4]
 
@@ -9,15 +8,17 @@
 
 [node name="Backgrounds" type="Node2D" parent="."]
 
-[node name="cityscape20001" type="Sprite" parent="Backgrounds"]
-position = Vector2( 3320, -24 )
-scale = Vector2( 6.98125, 4.14167 )
-texture = ExtResource( 2 )
+[node name="Layer1" type="TileMap" parent="Backgrounds"]
+format = 1
 
-[node name="cityscape20002" type="Sprite" parent="Backgrounds"]
-position = Vector2( 5544, -24 )
-scale = Vector2( 6.98125, 4.14167 )
-texture = ExtResource( 2 )
+[node name="Layer2" type="TileMap" parent="Backgrounds"]
+format = 1
+
+[node name="Layer3" type="TileMap" parent="Backgrounds"]
+format = 1
+
+[node name="Layer4" type="TileMap" parent="Backgrounds"]
+format = 1
 
 [node name="TileSets" type="Node2D" parent="."]
 
