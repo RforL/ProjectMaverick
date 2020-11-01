@@ -244,7 +244,7 @@ position = Vector2( 8288, 283.25 )
 position = Vector2( 8624, 283.25 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 5248, -280 )
+position = Vector2( 280, 8 )
 
 [node name="Area2D" parent="." instance=ExtResource( 14 )]
 position = Vector2( 11424, -172.75 )
