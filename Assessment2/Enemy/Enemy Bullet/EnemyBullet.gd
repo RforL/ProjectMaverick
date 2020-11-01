@@ -3,6 +3,7 @@ extends Area2D
 const speed = 500
 var velocity = Vector2()
 var direction = 1
+var player = load("res://Player/PlayerScript/Player.gd").new()
 
 func _ready():
 	pass
@@ -22,5 +23,5 @@ func _on_VisibilityNotifier2D_screen_exited():
 
 func _on_Bullet_body_entered(body):
 	if "Player" in body.name:
-		get_node("/root/Player").damage
+		player.damage()
 	queue_free()
