@@ -19,15 +19,6 @@ config/name="Assessment 2"
 run/main_scene="res://Levels/Level1/Level1.tscn"
 config/icon="res://icon.png"
 
-[autoload]
-
-Hud="*res://Interface/HUD.tscn"
-
-[display]
-
-window/size/resizable=false
-window/stretch/aspect="expand"
-
 [layer_names]
 
 2d_physics/layer_1="Platform"
