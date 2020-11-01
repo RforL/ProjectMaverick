@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Tilesets/Desert Tileset/DesertTileSets/DesertTileSets2.tres" type="TileSet" id=1]
 [ext_resource path="res://Tilesets/Desert Tileset/DesertTileSets/DesertTileSets.tres" type="TileSet" id=2]
@@ -15,8 +15,10 @@
 [ext_resource path="res://Assets/Greenery/Cactus (1).png" type="Texture" id=13]
 [ext_resource path="res://Assets/Greenery/Cactus (2).png" type="Texture" id=14]
 [ext_resource path="res://Enemy/Enemy.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Levels/Level1/Level1.gd" type="Script" id=16]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource( 16 )
 
 [node name="Act 1 final" type="Sprite" parent="."]
 position = Vector2( 1944, -184 )
@@ -286,7 +288,7 @@ position = Vector2( 4944, 170.004 )
 position = Vector2( 5640, 107.117 )
 
 [node name="Player" parent="." instance=ExtResource( 6 )]
-position = Vector2( 202.18, 12.3066 )
+position = Vector2( 10809.4, 89.7043 )
 
 [node name="Fallzone" parent="." instance=ExtResource( 5 )]
 position = Vector2( -77.4824, 516.769 )
@@ -296,6 +298,7 @@ position = Vector2( 7040, 512 )
 
 [node name="Area2D" parent="." instance=ExtResource( 7 )]
 position = Vector2( 11136, 151 )
+next_world = "res://Levels/Level1/Level12.tscn"
 
 [node name="Enemy" parent="." instance=ExtResource( 15 )]
 position = Vector2( 1390.9, 248.28 )

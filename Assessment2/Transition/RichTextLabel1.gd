@@ -1,6 +1,6 @@
 extends RichTextLabel
 
-var dialog = ["After battling through the harsh terrain of Texas", "He finally makes his way to the Lousianan", ""]
+var dialog = ["Navigating through the wet swamps of the Lousiana Bayous", "He makes his way to Fort Rucker, where the Cartel is overrun with Bandits", ""]
 var page = 0
 var num = 0
 
@@ -20,7 +20,7 @@ func _input(event):
 				print(num)
 				
 			if (num == 2):
-				get_tree().change_scene("res://Levels/Level2/Level2.tscn")
+				get_tree().change_scene("res://Levels/Level1/Level1.tscn")
 	
 
 

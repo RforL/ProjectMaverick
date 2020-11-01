@@ -349,3 +349,4 @@ scale = Vector2( 0.8, 0.8 )
 
 [node name="Area2D" parent="." instance=ExtResource( 24 )]
 position = Vector2( 9720, 88 )
+next_world = "res://Levels/Level2/Level22.tscn"
