@@ -115,6 +115,17 @@ func _on_AnimatedSprite_animation_finished():
 	attac = false
 	pass # Replace with function body.
 	
+func heal():
+	if health == 5:
+		pass
+	if health == 4:
+		health = 5
+		get_node("/root/Hud")._healthbar(health)
+	if health < 4:
+		health += 2
+		get_node("/root/Hud")._healthbar(health)
+		
+	
 func damage():
 	if damagable == true:
 		damagable = false
