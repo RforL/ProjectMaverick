@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Player/Maverick/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Backgrounds/Level1BGTexas/Act 1 night time .jpg" type="Texture" id=2]
@@ -15,8 +15,10 @@
 [ext_resource path="res://Assets/Fence/Fence1.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Teleport/Teleport.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Enemy/Enemy.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Levels/Level1/Level12.gd" type="Script" id=16]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource( 16 )
 
 [node name="Act 1 night time " type="Sprite" parent="."]
 position = Vector2( 1888, -184 )
@@ -245,20 +247,20 @@ position = Vector2( 8288, 283.25 )
 position = Vector2( 8624, 283.25 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 404.596, -8.98981 )
-
-[node name="Enemy" parent="Player" instance=ExtResource( 15 )]
-position = Vector2( 1521.98, 81.8948 )
-
-[node name="Enemy2" parent="Player" instance=ExtResource( 15 )]
-position = Vector2( 4806.6, 73.0754 )
-
-[node name="Enemy3" parent="Player" instance=ExtResource( 15 )]
-position = Vector2( 6390.32, -248.204 )
-
-[node name="Enemy4" parent="Player" instance=ExtResource( 15 )]
-position = Vector2( 9201.2, -181.429 )
+position = Vector2( 324.506, 17.707 )
 
 [node name="Area2D" parent="." instance=ExtResource( 14 )]
 position = Vector2( 11424, -172.75 )
 next_world = "res://Transition/Test2.tscn"
+
+[node name="Enemy" parent="." instance=ExtResource( 15 )]
+position = Vector2( 1926.58, 72.905 )
+
+[node name="Enemy2" parent="." instance=ExtResource( 15 )]
+position = Vector2( 5211.19, 64.0856 )
+
+[node name="Enemy3" parent="." instance=ExtResource( 15 )]
+position = Vector2( 6794.91, -257.194 )
+
+[node name="Enemy4" parent="." instance=ExtResource( 15 )]
+position = Vector2( 9605.8, -190.418 )

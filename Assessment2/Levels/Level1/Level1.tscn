@@ -288,7 +288,7 @@ position = Vector2( 4944, 170.004 )
 position = Vector2( 5640, 107.117 )
 
 [node name="Player" parent="." instance=ExtResource( 6 )]
-position = Vector2( 400.827, 233.954 )
+position = Vector2( 288.7, 175.221 )
 
 [node name="Fallzone" parent="." instance=ExtResource( 5 )]
 position = Vector2( -77.4824, 516.769 )

@@ -1,6 +1,6 @@
 extends RichTextLabel
 
-var dialog = ["After battling through the harsh terrain of Texas", "He finally makes his way to the Lousianan", ""]
+var dialog = ["Heading for Alabama, he killed every banit in site.", "Now heading to the final fort in Alabama", ""]
 var page = 0
 var num = 0
 

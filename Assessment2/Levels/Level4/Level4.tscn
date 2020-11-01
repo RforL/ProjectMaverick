@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Player/Maverick/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Tilesets/FortTiles/FortTileSets/FortTileScene.tres" type="TileSet" id=2]
@@ -8,8 +8,10 @@
 [ext_resource path="res://Assets/Torch/Torch.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Teleport/Teleport.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Enemy/Enemy.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Levels/Level4/Level4.gd" type="Script" id=9]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource( 9 )
 
 [node name="Backgrounds" type="Node2D" parent="."]
 
