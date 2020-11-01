@@ -134,14 +134,16 @@ func damage():
 		print(health) #debug
 		if health == 0:
 			print("Death Here!") #trigger death sound and screen
+			get_tree().change_scene("res://DeathScreen/DeathScene.tscn")
 		#get_node("root/HUD").reload
-		else:
-			get_node("/root/Hud")._healthbar(health)
-		yield(get_tree().create_timer(1), "timeout") #timer to see if maverick is getting rekt by colliding with someone
+		get_node("/root/Hud")._healthbar(health)
+		#yield(get_tree().create_timer(1), "timeout") #timer to see if maverick is getting rekt by colliding with someone
 		damagable = true
 		
 func _ready():
-		get_node("/root/Hud").get_child(0).show()
+	health = 5
+	get_node("/root/Hud").get_child(0).show()
+	get_node("/root/Hud")._healthbar(health)
 		
 
 

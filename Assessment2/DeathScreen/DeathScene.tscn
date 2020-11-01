@@ -1,0 +1,59 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://DeathScreen/DeathScene.gd" type="Script" id=1]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.101961, 0.101961, 0.101961, 1 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 232.238
+margin_top = 79.4103
+margin_right = 364.238
+margin_bottom = 93.4103
+rect_scale = Vector2( 4, 4 )
+text = "Maverick Has Died.
+Try Again? "
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = 251.963
+margin_top = 284.017
+margin_right = 423.963
+margin_bottom = 328.017
+rect_scale = Vector2( 3, 3 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="ContinueButton" type="Button" parent="VBoxContainer"]
+margin_right = 172.0
+margin_bottom = 20.0
+text = "Retry."
+
+[node name="ExitButton" type="Button" parent="VBoxContainer"]
+margin_top = 24.0
+margin_right = 172.0
+margin_bottom = 44.0
+text = "Give Up."
+[connection signal="pressed" from="VBoxContainer/ContinueButton" to="." method="_on_ContinueButton_pressed"]
