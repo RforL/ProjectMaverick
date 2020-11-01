@@ -11,15 +11,15 @@ func _ready():
 	pass # Replace with function body.
 	
 func _ammo(bullet):
-	$NinePatchRect/ammoSprite.set_frame(bullet)
-	$NinePatchRect/ammoSprite.stop()
+	$Control/NinePatchRect/ammoSprite.set_frame(bullet)
+	$Control/NinePatchRect/ammoSprite.stop()
 	
 func _reload():
-	$NinePatchRect/ammoSprite.set_frame(0)
-	$NinePatchRect/ammoSprite.play()
+	$Control/NinePatchRect/ammoSprite.set_frame(0)
+	$Control/NinePatchRect/ammoSprite.play()
 	
 func _healthbar(health):
-		$healthSprite.set_frame(health)
+		$Control/healthSprite.set_frame(health)
 		
 
 

@@ -128,5 +128,9 @@ func damage():
 			get_node("/root/Hud")._healthbar(health)
 		yield(get_tree().create_timer(1), "timeout") #timer to see if maverick is getting rekt by colliding with someone
 		damagable = true
+		
+func _ready():
+		get_node("/root/Hud").get_child(0).show()
+		
 
 

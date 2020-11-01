@@ -16,14 +16,6 @@
 [ext_resource path="res://Ammo/1080ppi/ammo_2.png" type="Texture" id=14]
 [ext_resource path="res://Interface/HUD.gd" type="Script" id=15]
 
-[sub_resource type="SpriteFrames" id=1]
-animations = [ {
-"frames": [ ExtResource( 11 ), ExtResource( 2 ), ExtResource( 14 ), ExtResource( 9 ), ExtResource( 6 ), ExtResource( 10 ), ExtResource( 7 ) ],
-"loop": false,
-"name": "default",
-"speed": 2.0
-} ]
-
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
 "frames": [ ExtResource( 13 ), ExtResource( 1 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 8 ), ExtResource( 3 ) ],
@@ -32,10 +24,31 @@ animations = [ {
 "speed": 5.0
 } ]
 
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 11 ), ExtResource( 2 ), ExtResource( 14 ), ExtResource( 9 ), ExtResource( 6 ), ExtResource( 10 ), ExtResource( 7 ) ],
+"loop": false,
+"name": "default",
+"speed": 2.0
+} ]
+
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource( 15 )
 
-[node name="NinePatchRect" type="NinePatchRect" parent="."]
+[node name="Control" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="healthSprite" type="AnimatedSprite" parent="Control"]
+position = Vector2( 234.102, 80.2372 )
+scale = Vector2( 0.05, 0.05 )
+frames = SubResource( 2 )
+frame = 5
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Control"]
 margin_left = 884.142
 margin_top = 465.227
 margin_right = 981.142
@@ -46,14 +59,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ammoSprite" type="AnimatedSprite" parent="NinePatchRect"]
+[node name="ammoSprite" type="AnimatedSprite" parent="Control/NinePatchRect"]
 position = Vector2( 50.084, 49.6504 )
 scale = Vector2( 0.04427, 0.04427 )
 frames = SubResource( 1 )
 frame = 6
-
-[node name="healthSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 234.102, 80.2372 )
-scale = Vector2( 0.05, 0.05 )
-frames = SubResource( 2 )
-frame = 5
