@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Player/Maverick/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Tilesets/FortTiles/FortTileSets/FortTileScene.tres" type="TileSet" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://Assets/Torch/Torch.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Fallzone.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Enemy/Enemy.tscn" type="PackedScene" id=11]
+[ext_resource path="res://moonshine/moonshine.tscn" type="PackedScene" id=12]
 
 [node name="Node2D" type="Node2D"]
 
@@ -165,3 +166,9 @@ position = Vector2( 0, 520 )
 
 [node name="Fallzone2" parent="." instance=ExtResource( 10 )]
 position = Vector2( 6864, 520 )
+
+[node name="moonshine" parent="." instance=ExtResource( 12 )]
+position = Vector2( 2829.86, 197.556 )
+
+[node name="moonshine2" parent="." instance=ExtResource( 12 )]
+position = Vector2( 6465.97, -272.307 )
