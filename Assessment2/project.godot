@@ -26,7 +26,7 @@ Hud="*res://Interface/HUD.tscn"
 [display]
 
 window/size/resizable=false
-window/stretch/aspect="expand"
+window/stretch/mode="viewport"
 
 [layer_names]
 
