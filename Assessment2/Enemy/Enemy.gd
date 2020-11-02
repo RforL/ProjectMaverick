@@ -35,8 +35,12 @@ func attack():
 	var fireball = FIREBALL.instance()
 	if sign($Position2D.position.x) == 1:
 		fireball.set_fireball_direction(1)
+		direction = direction * -1
+		$AnimatedSprite.flip_h = true
 	else:
 		fireball.set_fireball_direction(-1)
+		direction = direction * -1
+		$AnimatedSprite.flip_h = false
 	get_parent().add_child(fireball)
 	fireball.position = $Position2D.global_position
 	
@@ -70,7 +74,7 @@ func _on_PlayerDetect_body_entered(body):
 	if body.name == "Player":
 		inbody = true
 		player = body
-		while(inbody == true):
+		while(inbody == true && is_dead == false):
 			attack()
 			yield(get_tree().create_timer(1), "timeout")
 		
