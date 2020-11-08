@@ -57,3 +57,4 @@ margin_right = 172.0
 margin_bottom = 44.0
 text = "Give Up."
 [connection signal="pressed" from="VBoxContainer/ContinueButton" to="." method="_on_ContinueButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/ExitButton" to="." method="_on_ExitButton_pressed"]
