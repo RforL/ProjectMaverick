@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Teleport/Teleport.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player/Maverick/Player.tscn" type="PackedScene" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://Tilesets/FortTiles/FortTileSets/FortTile1.tres" type="TileSet" id=8]
 [ext_resource path="res://Enemy/Enemy.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Levels/Level3/Level32.gd" type="Script" id=10]
+[ext_resource path="res://Fallzone.tscn" type="PackedScene" id=11]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 10 )
@@ -99,3 +100,9 @@ position = Vector2( 10107.3, -150.443 )
 [node name="Area2D" parent="." instance=ExtResource( 1 )]
 position = Vector2( 10752, -40 )
 next_world = "res://Transition/Test4.tscn"
+
+[node name="Fallzone" parent="." instance=ExtResource( 11 )]
+position = Vector2( -642.739, 524.788 )
+
+[node name="Fallzone2" parent="." instance=ExtResource( 11 )]
+position = Vector2( 6554.73, 524.789 )

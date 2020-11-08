@@ -161,7 +161,7 @@ position = Vector2( 10752, -40 )
 next_world = "res://Wenjie/Level32.tscn"
 
 [node name="Fallzone" parent="." instance=ExtResource( 10 )]
-position = Vector2( 0, 520 )
+position = Vector2( -309.683, 520 )
 
 [node name="Fallzone2" parent="." instance=ExtResource( 10 )]
-position = Vector2( 6864, 520 )
+position = Vector2( 6880.02, 525.339 )
