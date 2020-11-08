@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://Player/Maverick/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Backgrounds/Level2BGLousianaBayous/background_1.png" type="Texture" id=2]
@@ -28,6 +28,7 @@
 [ext_resource path="res://Enemy/Enemy.tscn" type="PackedScene" id=26]
 [ext_resource path="res://Levels/Level2/Level22.gd" type="Script" id=27]
 [ext_resource path="res://Fallzone.tscn" type="PackedScene" id=28]
+[ext_resource path="res://Audio/Level Music/Level 2.ogg" type="AudioStream" id=29]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 27 )
@@ -340,3 +341,8 @@ position = Vector2( -840.296, 610.219 )
 
 [node name="Fallzone2" parent="." instance=ExtResource( 28 )]
 position = Vector2( 6325.14, 610.218 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 29 )
+volume_db = -13.126
+autoplay = true

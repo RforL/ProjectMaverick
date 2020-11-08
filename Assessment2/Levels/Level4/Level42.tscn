@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Player/Maverick/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Tilesets/FortTiles/FortTileSets/FortTileScene.tres" type="TileSet" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://Levels/Level4/Level42.gd" type="Script" id=13]
 [ext_resource path="res://moonshine/moonshine.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Fallzone.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Audio/Level Music/Level 4.ogg" type="AudioStream" id=16]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 13 )
@@ -158,3 +159,8 @@ position = Vector2( 2242.54, -277.647 )
 position = Vector2( 5889.33, -144.163 )
 
 [node name="Fallzone" parent="." instance=ExtResource( 15 )]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 16 )
+volume_db = -15.146
+autoplay = true

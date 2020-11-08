@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Tilesets/Desert Tileset/DesertTileSets/DesertTileSets2.tres" type="TileSet" id=1]
 [ext_resource path="res://Tilesets/Desert Tileset/DesertTileSets/DesertTileSets.tres" type="TileSet" id=2]
@@ -16,6 +16,7 @@
 [ext_resource path="res://Assets/Greenery/Cactus (2).png" type="Texture" id=14]
 [ext_resource path="res://Enemy/Enemy.tscn" type="PackedScene" id=15]
 [ext_resource path="res://Levels/Level1/Level1.gd" type="Script" id=16]
+[ext_resource path="res://Audio/Level Music/Level 1.ogg" type="AudioStream" id=17]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 16 )
@@ -308,3 +309,8 @@ position = Vector2( 5868.3, 129.486 )
 
 [node name="Enemy3" parent="." instance=ExtResource( 15 )]
 position = Vector2( 9845.07, 126.658 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 17 )
+volume_db = -29.282
+autoplay = true

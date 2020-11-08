@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://Player/Maverick/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Tilesets/SwampTileSets/SwampTileSet/SwampTile.tres" type="TileSet" id=2]
@@ -27,6 +27,7 @@
 [ext_resource path="res://Enemy/Enemy.tscn" type="PackedScene" id=25]
 [ext_resource path="res://Levels/Level2/Level2.gd" type="Script" id=26]
 [ext_resource path="res://Fallzone.tscn" type="PackedScene" id=27]
+[ext_resource path="res://Audio/Level Music/Level 2.ogg" type="AudioStream" id=28]
 
 [node name="Node2D" type="Node2D"]
 position = Vector2( 8, 160 )
@@ -378,3 +379,8 @@ position = Vector2( -560.367, 398.55 )
 
 [node name="Fallzone2" parent="." instance=ExtResource( 27 )]
 position = Vector2( 4411.01, 410.536 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 28 )
+volume_db = -14.136
+autoplay = true
