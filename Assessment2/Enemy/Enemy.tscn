@@ -50,10 +50,15 @@
 [ext_resource path="res://Enemy/Enemy Animations/Sherif dead/4.png" type="Texture" id=48]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 47.9922, 57.9258 )
+extents = Vector2( 39.5822, 53.5669 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
+"frames": [ ExtResource( 40 ), ExtResource( 42 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 45 ), ExtResource( 33 ), ExtResource( 43 ), ExtResource( 38 ), ExtResource( 35 ), ExtResource( 34 ), ExtResource( 39 ) ],
+"loop": true,
+"name": "Dead",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 14 ), ExtResource( 12 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 8 ), ExtResource( 11 ), ExtResource( 36 ) ],
 "loop": true,
 "name": "Idle",
@@ -68,16 +73,11 @@ animations = [ {
 "loop": true,
 "name": "Shoot",
 "speed": 5.0
-}, {
-"frames": [ ExtResource( 40 ), ExtResource( 42 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 45 ), ExtResource( 33 ), ExtResource( 43 ), ExtResource( 38 ), ExtResource( 35 ), ExtResource( 34 ), ExtResource( 39 ) ],
-"loop": true,
-"name": "Dead",
-"speed": 5.0
 } ]
 
 [sub_resource type="CapsuleShape2D" id=3]
-radius = 283.078
-height = 0.0
+radius = 59.9594
+height = 19.6675
 
 [node name="Enemy" type="KinematicBody2D"]
 script = ExtResource( 1 )
@@ -86,11 +86,10 @@ script = ExtResource( 1 )
 shape = SubResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 4.76837e-07, -9.53674e-07 )
-scale = Vector2( 0.5, 0.5 )
+scale = Vector2( 0.355946, 0.355946 )
 frames = SubResource( 2 )
 animation = "Shoot"
-frame = 1
+frame = 7
 playing = true
 
 [node name="Position2D" type="Position2D" parent="."]

@@ -36,11 +36,13 @@ func attack():
 	if sign($Position2D.position.x) == 1:
 		fireball.set_fireball_direction(1)
 		direction = direction * -1
-		$AnimatedSprite.flip_h = true
+		$AnimatedSprite.flip_h = not $AnimatedSprite.flip_h
+		$floor_checker.position.x = $CollisionShape2D.shape.get_extents().x * direction
 	else:
 		fireball.set_fireball_direction(-1)
 		direction = direction * -1
-		$AnimatedSprite.flip_h = false
+		$AnimatedSprite.flip_h = not $AnimatedSprite.flip_h
+		$floor_checker.position.x = $CollisionShape2D.shape.get_extents().x * direction
 	get_parent().add_child(fireball)
 	fireball.position = $Position2D.global_position
 	
