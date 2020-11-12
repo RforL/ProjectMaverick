@@ -50,7 +50,7 @@
 [ext_resource path="res://Enemy/Enemy Animations/Sherif dead/4.png" type="Texture" id=48]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 39.5822, 53.5669 )
+extents = Vector2( 39.5822, 48.0172 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
@@ -59,9 +59,9 @@ animations = [ {
 "name": "Dead",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 14 ), ExtResource( 12 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 8 ), ExtResource( 11 ), ExtResource( 36 ) ],
+"frames": [ ExtResource( 24 ), ExtResource( 19 ), ExtResource( 22 ), ExtResource( 15 ), ExtResource( 20 ), ExtResource( 9 ), ExtResource( 16 ), ExtResource( 21 ), ExtResource( 18 ), ExtResource( 13 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 23 ), ExtResource( 17 ), ExtResource( 7 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 10 ) ],
 "loop": true,
-"name": "Idle",
+"name": "Shoot",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 46 ), ExtResource( 29 ), ExtResource( 37 ), ExtResource( 32 ), ExtResource( 28 ), ExtResource( 44 ), ExtResource( 30 ), ExtResource( 41 ), ExtResource( 31 ) ],
@@ -69,9 +69,9 @@ animations = [ {
 "name": "Walk",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 24 ), ExtResource( 19 ), ExtResource( 22 ), ExtResource( 15 ), ExtResource( 20 ), ExtResource( 9 ), ExtResource( 16 ), ExtResource( 21 ), ExtResource( 18 ), ExtResource( 13 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 23 ), ExtResource( 17 ), ExtResource( 7 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 10 ) ],
+"frames": [ ExtResource( 14 ), ExtResource( 12 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 8 ), ExtResource( 11 ), ExtResource( 36 ) ],
 "loop": true,
-"name": "Shoot",
+"name": "Idle",
 "speed": 5.0
 } ]
 
@@ -89,7 +89,7 @@ shape = SubResource( 1 )
 scale = Vector2( 0.355946, 0.355946 )
 frames = SubResource( 2 )
 animation = "Shoot"
-frame = 7
+frame = 13
 playing = true
 
 [node name="Position2D" type="Position2D" parent="."]
