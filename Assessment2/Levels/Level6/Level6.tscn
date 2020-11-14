@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Player/Maverick/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Tilesets/CityTiles/CityTileSets/CityCollision.tres" type="TileSet" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Fallzone.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Enemy/Enemy.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Teleport/Teleport.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Audio/Level Music/Against Time Royalty Free Post-Apocalyptic Music (128 kbps).ogg" type="AudioStream" id=10]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 120.893, 5.13025 )
@@ -87,3 +88,7 @@ one_way_collision = true
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 333.377, 246.548 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+volume_db = -9.087
