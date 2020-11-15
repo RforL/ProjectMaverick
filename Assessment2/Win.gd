@@ -10,5 +10,5 @@ func _on_Play_pressed():
 	pass
 
 func _on_Exit_pressed():
-	get_tree().quit()
+	get_tree().change_scene("res://StartScreen/StartMenu.tscn")
 	pass
