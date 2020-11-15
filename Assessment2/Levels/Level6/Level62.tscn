@@ -103,6 +103,7 @@ one_way_collision = true
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="OneWayCollision"]
 position = Vector2( 2633.31, 110.126 )
 shape = SubResource( 4 )
+one_way_collision = true
 
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="OneWayCollision"]
 position = Vector2( 2295.58, 153.71 )
@@ -117,6 +118,7 @@ one_way_collision = true
 [node name="CollisionShape2D8" type="CollisionShape2D" parent="OneWayCollision"]
 position = Vector2( 4260.72, 108.02 )
 shape = SubResource( 7 )
+one_way_collision = true
 
 [node name="Enemies" type="Node2D" parent="."]
 
