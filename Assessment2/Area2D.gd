@@ -8,4 +8,4 @@ func _physics_process(delta):
 	
 	for body in bodies:
 			if body.name == "Player":
-					get_tree().change_scene(next_world)
+					get_tree().change_scene("Levels/Level6/Level62.tscn")
