@@ -164,3 +164,6 @@ autoplay = true
 
 [node name="moonshine" parent="." instance=ExtResource( 10 )]
 position = Vector2( 3469.32, 41.9779 )
+
+[node name="Enemy" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2076.6, 221.027 )
