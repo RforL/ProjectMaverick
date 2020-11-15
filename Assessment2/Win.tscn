@@ -1,0 +1,77 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Assets/Fonts/WEST____.TTF" type="DynamicFontData" id=1]
+[ext_resource path="res://Assets/Fonts/RioGrande.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Win.gd" type="Script" id=3]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.0627451, 0.286275, 0.52549, 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 60
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 40
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 40
+font_data = ExtResource( 2 )
+
+[node name="Control" type="Control"]
+margin_right = 1024.0
+margin_bottom = 600.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+margin_right = 1025.0
+margin_bottom = 599.0
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 65.5895
+margin_top = 116.07
+margin_right = 954.589
+margin_bottom = 236.07
+custom_fonts/font = SubResource( 2 )
+text = "You have saved Mavericks family!"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 319.373
+margin_top = 188.0
+margin_right = -303.627
+margin_bottom = -258.0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Play" type="Button" parent="VBoxContainer"]
+margin_top = 26.0
+margin_right = 401.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 3 )
+text = "Play Again!"
+
+[node name="Exit" type="Button" parent="VBoxContainer"]
+margin_top = 79.0
+margin_right = 401.0
+margin_bottom = 128.0
+custom_fonts/font = SubResource( 4 )
+text = "Main Menu"
+[connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_Play_pressed"]
+[connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_Exit_pressed"]

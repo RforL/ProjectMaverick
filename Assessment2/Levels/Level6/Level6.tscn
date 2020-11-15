@@ -152,8 +152,8 @@ one_way_collision = true
 position = Vector2( 2155.77, 5.33936 )
 shape = SubResource( 6 )
 
-[node name="moonshine" parent="OneWayCollision" instance=ExtResource( 13 )]
-position = Vector2( 3936.24, -140.611 )
+[node name="moonshine" parent="." instance=ExtResource( 13 )]
+position = Vector2( 5369.32, 143.848 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 333.377, 246.548 )
