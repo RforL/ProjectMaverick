@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Player/Maverick/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Backgrounds/Level1BGTexas/Act 1 night time .jpg" type="Texture" id=2]
@@ -16,6 +16,8 @@
 [ext_resource path="res://Teleport/Teleport.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Enemy/Enemy.tscn" type="PackedScene" id=15]
 [ext_resource path="res://Levels/Level1/Level12.gd" type="Script" id=16]
+[ext_resource path="res://Fallzone.tscn" type="PackedScene" id=17]
+[ext_resource path="res://Audio/Level Music/Level 1.ogg" type="AudioStream" id=18]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 16 )
@@ -264,3 +266,12 @@ position = Vector2( 6794.91, -257.194 )
 
 [node name="Enemy4" parent="." instance=ExtResource( 15 )]
 position = Vector2( 9605.8, -190.418 )
+
+[node name="Fallzone" parent="." instance=ExtResource( 17 )]
+
+[node name="Fallzone2" parent="." instance=ExtResource( 17 )]
+position = Vector2( 7321.78, 505.951 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 18 )
+volume_db = -33.596

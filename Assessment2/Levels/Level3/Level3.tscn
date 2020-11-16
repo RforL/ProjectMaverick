@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Player/Maverick/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Tilesets/FortTiles/FortTileSets/FortTileScene.tres" type="TileSet" id=2]
@@ -11,6 +11,8 @@
 [ext_resource path="res://Assets/Torch/Torch.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Fallzone.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Enemy/Enemy.tscn" type="PackedScene" id=11]
+[ext_resource path="res://moonshine/moonshine.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Audio/Level Music/Level 3.ogg" type="AudioStream" id=13]
 
 [node name="Node2D" type="Node2D"]
 
@@ -161,7 +163,18 @@ position = Vector2( 10752, -40 )
 next_world = "res://Wenjie/Level32.tscn"
 
 [node name="Fallzone" parent="." instance=ExtResource( 10 )]
-position = Vector2( 0, 520 )
+position = Vector2( -309.683, 520 )
 
 [node name="Fallzone2" parent="." instance=ExtResource( 10 )]
-position = Vector2( 6864, 520 )
+position = Vector2( 6880.02, 525.339 )
+
+[node name="moonshine" parent="." instance=ExtResource( 12 )]
+position = Vector2( 4800.09, -69.4119 )
+
+[node name="moonshine2" parent="." instance=ExtResource( 12 )]
+position = Vector2( 7544.53, -405.792 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 13 )
+volume_db = -7.068
+autoplay = true

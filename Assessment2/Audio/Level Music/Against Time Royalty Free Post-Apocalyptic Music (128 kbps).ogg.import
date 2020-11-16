@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Against Time Royalty Free Post-Apocalyptic Music (128 kbps).ogg-76582a24f916c4ccc01d6199eac835d6.oggstr"
+
+[deps]
+
+source_file="res://Audio/Level Music/Against Time Royalty Free Post-Apocalyptic Music (128 kbps).ogg"
+dest_files=[ "res://.import/Against Time Royalty Free Post-Apocalyptic Music (128 kbps).ogg-76582a24f916c4ccc01d6199eac835d6.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -25,7 +25,7 @@ func dead():
 	is_dead = true
 	velocity = Vector2(0,0)
 	$AnimatedSprite.play("Dead")
-	$CollisionShape2D.disabled = true
+	$CollisionShape2D.set_deferred("disabled", true)
 	$Timer.start()
 
 func attack():
@@ -35,8 +35,14 @@ func attack():
 	var fireball = FIREBALL.instance()
 	if sign($Position2D.position.x) == 1:
 		fireball.set_fireball_direction(1)
+		direction = direction * -1
+		$AnimatedSprite.flip_h = not $AnimatedSprite.flip_h
+		$floor_checker.position.x = $CollisionShape2D.shape.get_extents().x * direction
 	else:
 		fireball.set_fireball_direction(-1)
+		direction = direction * -1
+		$AnimatedSprite.flip_h = not $AnimatedSprite.flip_h
+		$floor_checker.position.x = $CollisionShape2D.shape.get_extents().x * direction
 	get_parent().add_child(fireball)
 	fireball.position = $Position2D.global_position
 	
@@ -70,7 +76,7 @@ func _on_PlayerDetect_body_entered(body):
 	if body.name == "Player":
 		inbody = true
 		player = body
-		while(inbody == true):
+		while(inbody == true && is_dead == false):
 			attack()
 			yield(get_tree().create_timer(1), "timeout")
 		

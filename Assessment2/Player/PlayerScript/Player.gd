@@ -142,8 +142,10 @@ func damage():
 		
 func _ready():
 	health = 5
+	bullets = 6
 	get_node("/root/Hud").get_child(0).show()
 	get_node("/root/Hud")._healthbar(health)
+	get_node("/root/Hud")._ammo(bullets)
 		
 
 
